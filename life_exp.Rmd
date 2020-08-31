@@ -1,7 +1,7 @@
 ---
 title: "Life Expectancy Analysis"
 author: "Favian Liu"
-date: "`r Sys.Date()`"
+date: "8/31/2020"
 output: pdf_document
 ---
 
@@ -9,10 +9,8 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Abstract
+## Abstract
 
-Here, I re-examine the analysis of Oeppen and Vaupel (2002).
+Here, I analyse the famous plot from Oeppen and Vaupel (2002).
 
-# Analysis
-
-Here I load in the data.
+#Analysis
