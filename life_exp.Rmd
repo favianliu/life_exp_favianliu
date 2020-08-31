@@ -39,3 +39,10 @@ highest_life_exp %>%
   geom_point(aes(colour = country)) +
   theme_classic()
 ```
+
+
+Now I will calculate summary statistic:
+```{r}
+summarise(highest_life_exp)
+```
+
