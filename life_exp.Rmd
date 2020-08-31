@@ -13,4 +13,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Here, I analyse the famous plot from Oeppen and Vaupel (2002).
 
-#Analysis
+# Life Expectancy Analysis
+
+```{r, message=FALSE}
+library(tidyverse)
+library(gapminder)
+data("gapminder_unfiltered")
+```
+
+
+```{r}
+gapminder_unfiltered %>%
+      group_by(year) %>%
+      filter(lifeExp == max(lifeExp)) %>%
+      ungroup() %>%
+      select(year, country, lifeExp) %>%
+      arrange(year) -> highest_life_exp
+      
+```
+
