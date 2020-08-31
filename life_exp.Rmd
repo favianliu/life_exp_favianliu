@@ -21,7 +21,7 @@ library(gapminder)
 data("gapminder_unfiltered")
 ```
 
-
+Here, I calculated the maximum life expectancy for each year.
 ```{r}
 gapminder_unfiltered %>%
       group_by(year) %>%
