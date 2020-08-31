@@ -36,5 +36,6 @@ Now I will make a plot:
 ```{r}
 highest_life_exp %>%
   ggplot(aes(year, lifeExp)) +
-  geom_point(aes(colour = country))
+  geom_point(aes(colour = country)) +
+  theme_classic()
 ```
