@@ -43,6 +43,8 @@ highest_life_exp %>%
 
 Now I will calculate summary statistic:
 ```{r}
-summarise(highest_life_exp)
+gapminder_unfiltered %>%
+  filter(year == 2000) %>%
+  summarise(aveLifeExp = mean(lifeExp))
 ```
 
